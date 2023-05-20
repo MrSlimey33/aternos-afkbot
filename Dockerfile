@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose the TCP port your application listens on
-EXPOSE 443/tcp
+EXPOSE 80/tcp
 
 # Specify the command to run your application
 CMD ["npm", "start"]
