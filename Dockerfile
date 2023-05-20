@@ -13,5 +13,8 @@ RUN npm install
 # Copy the rest of the application code to the container
 COPY . .
 
+# Expose the TCP port your application listens on
+EXPOSE 443/tcp
+
 # Specify the command to run your application
 CMD ["npm", "start"]
